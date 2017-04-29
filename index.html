@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>TAKE/OFF</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="By" content="Luis Gomez">
+	<meta name="Description" content="Take It Off">
+	<meta name="Actions" content="HTML,CSS,JavaScript">
+
+
+<link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
+<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+
+
+
+	<style type="text/css">
+                body {
+                  background-image: url(imgs/luyy.jpg);
+                  background-position: center;
+                  background-repeat: repeat;
+                  background-attachment: fixed;
+
+              }
+
+                body {
+                	font-family: Arial, Helvetica, sans-serif;
+                	font-size: 16px;
+                	background-image: url(imgs/luyy.jpg);
+                	background-repeat: repeat;
+                	background-position: center;
+                	background-attachment: fixed;
+                	color: #orange;
+              }	
+
+                ul {
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+                    overflow: hidden;
+                    background-color: rgba(204, 153, 0, .5);
+                    text-align: center;
+              }
+
+                li {
+                    float: left;
+              }
+
+                li a, .dropbtn {
+                    display: inline-block;
+                    color: black;
+                    text-align: center;
+                    padding: 14px 16px;
+                    text-decoration: none;
+              }
+
+                li a:hover, .dropdown:hover .dropbtn {
+                    background-color: #e68a00;
+              }
+
+                li.dropdown {
+                    display: inline-block;
+              }
+
+                .dropdown-content {
+                    display: none;
+                    position: absolute;
+                    background-color: #9999ff;
+                    min-width: 160px;
+                    box-shadow: 0px 8px 16px 0px rgba(153, 153, 255, .1);
+                    z-index: 1;
+              }
+
+                .dropdown-content a {
+                    color: black;
+                    padding: 12px 16px;
+                    text-decoration: none;
+                    display: block;
+                    text-align: left;
+              }
+
+                .dropdown-content a:hover {background-color: #e68a00}
+
+                .dropdown:hover .dropdown-content {
+                    display: block;
+              }
+
+                  input {
+                    background-color: rgba(153, 153, 255, .3);
+                    border: solid; 
+                    color: black;
+                    padding: 5px;
+                    font-size: 10px;
+                    padding-top: 6px;
+                    margin-left: 15px;
+                  }
+                  input[type="submit"] {
+                    background: #e68a00;
+                    color: orange;
+                    margin-left: px;
+                  }
+
+                  .section {
+                    border: solid 4px black;
+                    margin-top: 30px;
+                    margin-right: 300px;
+                    padding: 20px;
+                    width: 96%;
+                  }
+
+
+                  .dropdownimg {
+                      position: relative;
+                      display: inline-block;
+                      left: 200px;
+                      top: -100px;
+
+                  }
+
+                  .dropdown-contentimg {
+                      display: none;
+                      position: absolute;
+                      background-color: #f9f9f9;
+                      min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                      z-index: 1;
+                  }
+
+                  .dropdownimg:hover .dropdown-contentimg {
+                      display: block;
+                  }
+
+                  .desc {
+                      padding: 15px;
+                      text-align: center;
+                  }
+
+		</style> 
+
+              <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+              <script>
+                
+                $(document).ready(function(){
+                  // Add smooth scrolling to all links
+                  $("a").on('click', function(event) {
+
+                    // Make sure this.hash has a value before overriding default behavior
+                    if (this.hash !== "") {
+                      // Prevent default anchor click behavior
+                      event.preventDefault();
+
+                      // Store hash
+                      var hash = this.hash;
+
+                      // Using jQuery's animate() method to add smooth page scroll
+                      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+                      $('html, body').animate({
+                        scrollTop: $(hash).offset().top
+                      }, 300, function(){
+
+                        // Add hash (#) to URL when done scrolling (default click behavior)
+                        window.location.hash = hash;
+                      });
+                    } // End if
+                  });
+                });
+                
+              </script>
+
+
+</head>
+            
+  
+
+  <body>
+
+              <center><h1 id="welcome" style="text-align: center; color: #cc6600;"><a style="color: #cc6600;" href="#welcome"><img src="">TAKE/OFF<img src="imgs/26.jpg" width="80px" style="margin-left: 20px;"></a></h1></center>
+
+                <p id="#about" style="text-align: center; color: #cc6600;">Transform Your Traveling Experience</p>
+
+              <header style="text-align: center;"><ul style="background-color: rgba(153, 153, 255, .1);">
+
+                <li style="padding-top: 14px; padding-right: 5px; font-size: 18px;"><strong>Take/Off </strong></li>
+                <li><a href="#about">About </a></li>
+                <li><a href="#stats">Statistics </a></li>
+                <li class="dropdown">
+                  <a href="#feature1" class="dropbtn">Features </a>
+                  <div class="dropdown-content">
+                    <a href="#feature1">Luggage Fees</a>
+                    <a href="#feature2">Luggage Weights</a>
+                    <a href="#feature3">Allowed On Flight?</a>
+                <li><a href="#future">The Future </a></li>
+                <li><a href="#contact">Contact </a></li>
+                  </div>
+                </li>
+                  <li style="padding-top: 8px;"><input type="text" placeholder="Verify Your Item"><input type="button" value="search"></li>
+                </ul></header>
+
+
+                    <div id="about" class="section">
+                      <br/><br/>
+                     <p style="display: inline-block;">
+                     <u> WHO IS TAKEOFF? </u>
+                      <br/>
+                     <u> WHAT DOES TAKEOFF DO?</u>
+                      <br/>
+                     <u> WHY DOES TAKEOFF DO THIS?</u>
+                     </p>
+                                    <br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/26.jpg" alt="Rocket" width="100" height="50">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/26.jpg" alt="Rocket" width="300" height="200">
+                              <div class="desc">Let's Take Off</div>
+                           </div>
+                         </div>
+
+                        <br/><br/><br/><br/>
+
+                           <div style="text-align: center;"> 
+                              <a href="#stats">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: black;"></i>
+                              </a> 
+
+                              <a href="#welcome">
+                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: black;"></i>
+                              </a> 
+                          </div>
+
+                    </div>
+
+                        <div id="stats" class="section">
+                      <u>NUMBER$ & STAT$</u>
+                        <br/><br/><br/><br/>
+
+                            <a href="#feature1"> <img src="///??????////"> </a>
+                            <a href="#about"> <img src="///^^^^^^^////"> </a>
+                    </div>
+                    
+                    <div id="feature1" class="section">
+                      <u>LUGGAGE FEES</u>
+                        <br/><br/><br/>
+
+                            <a href="#feature2"> <img src="///??????////"> </a>
+                            <a href="#stats"> <img src="///^^^^^^^////"> </a>
+                    </div>
+                    
+                    <div id="feature2" class="section">
+                     <u> LUGGAGE WEIGHTS</u>
+                        <br/><br/>
+                            <a href="#feature3"> <img src="///??????////"> </a>
+                            <a href="#feature1"> <img src="///^^^^^^^////"> </a>
+                    </div>
+
+                        <div id="feature3" class="section">
+                     <u> WHAT'S ALLOWED?</u>
+                              <br/>
+                              <input type="idea" placeholder="Enter Item">
+                              <input type="button" value="Submit Item">
+                        <br/><br/>
+
+                            <a href="#future"> <img src="///??????////"> </a>
+                            <a href="#feature2"> <img src="///^^^^^^^////"> </a>                          
+                    </div>
+
+                        <div id="future" class="section">
+                      <u> NEAR FUTURE FEATURES</u>
+                        <br/>
+                        <br/>
+                        News Destination. <br/>
+                        <span style="padding-left: 18px;">Look At Current News And Events Happening At Your Destination Location.</span>
+                        <br/>
+                        <br/>
+                        Take/Off Attendance <br/>
+                        <span style="padding-left: 18px;"> Helps Organize Pilot and Flight Attendance's Latenesses and Schedules.</span>
+                        <br/>
+
+                            <a href="#contact"> <img src="///??????////"> </a>
+                            <a href="#feature3"> <img src="///^^^^^^^////"> </a>
+                    </div>
+
+                      <div id="contact" class="section">
+                          <u>Contact</u>
+                      <a href="mailto:GomezLuisAP@Gmail.com">GomezLuisAP@Gmail.com</a>
+                      <br/>
+                      <a href=""></a>
+                      @LinkedIn
+                      <br/>
+                      <a href=""></a>
+                      @GitHub
+                        <br/><br/><br/><br/>
+
+                            <a href="#welcome"> <img src="///^^^^^^^////"> </a>
+                    </div>
+
+                    </div>
+
+                          
+                      
+                        <br/>
+                      © 2017 TAKE/OFF 
+                      <button type="button" onclick="alert('FAILURE IS SUCCESS')">Click Me</button>
+                            
+                    </div>
+
+  </body>
+</html>
