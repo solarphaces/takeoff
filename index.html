@@ -8,11 +8,7 @@
 	<meta name="Description" content="Take It Off">
 	<meta name="Actions" content="HTML,CSS,JavaScript">
 
-
 <link rel="stylesheet" href="font-awesome/css/font-awesome.min.css">
-<link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
-
-
 
 	<style type="text/css">
                 body {
@@ -20,7 +16,6 @@
                   background-position: center;
                   background-repeat: repeat;
                   background-attachment: fixed;
-
               }
 
                 body {
@@ -30,7 +25,7 @@
                 	background-repeat: repeat;
                 	background-position: center;
                 	background-attachment: fixed;
-                	color: #orange;
+                	color: #orange;                 
               }	
 
                 ul {
@@ -55,7 +50,7 @@
               }
 
                 li a:hover, .dropdown:hover .dropbtn {
-                    background-color: #e68a00;
+                    background-color: #ff9980;
               }
 
                 li.dropdown {
@@ -65,7 +60,7 @@
                 .dropdown-content {
                     display: none;
                     position: absolute;
-                    background-color: #9999ff;
+                    background-color: #ff8566;
                     min-width: 160px;
                     box-shadow: 0px 8px 16px 0px rgba(153, 153, 255, .1);
                     z-index: 1;
@@ -79,7 +74,7 @@
                     text-align: left;
               }
 
-                .dropdown-content a:hover {background-color: #e68a00}
+                .dropdown-content a:hover {background-color: #ff704d}
 
                 .dropdown:hover .dropdown-content {
                     display: block;
@@ -94,6 +89,7 @@
                     padding-top: 6px;
                     margin-left: 15px;
                   }
+
                   input[type="submit"] {
                     background: #e68a00;
                     color: orange;
@@ -101,20 +97,28 @@
                   }
 
                   .section {
-                    border: solid 4px black;
+                    border-radius: 20px;
+                    border: double 2px #000066;                  
+                    margin-top: 30px;
+                    margin-right: 300px;
+                    padding: 40px;
+                    width: 93%;
+                    background-color: rgba(144, 144, 187, .2);
+                  }
+
+                    .section2 {
+                    border: solid 2px #000066;#ffc2b3
                     margin-top: 30px;
                     margin-right: 300px;
                     padding: 20px;
                     width: 96%;
                   }
 
-
                   .dropdownimg {
                       position: relative;
                       display: inline-block;
                       left: 200px;
                       top: -100px;
-
                   }
 
                   .dropdown-contentimg {
@@ -126,13 +130,93 @@
                       z-index: 1;
                   }
 
-                  .dropdownimg:hover .dropdown-contentimg {
+                 .dropdownimg:hover .dropdown-contentimg {
                       display: block;
                   }
 
                   .desc {
                       padding: 15px;
                       text-align: center;
+                  }
+
+                  .dropdownfeat {
+                      position: relative;
+                      display: inline-block;
+                      object-position: right;
+                  }
+
+                  .dropdown-contentfeat {
+                      display: none;
+                      position: absolute;
+                      background-color: rgba(89, 0, 179, 1);
+                      min-width: 160px;
+                      box-shadow: 0px 8px 16px 0px rgba(255, 133, 102, 0.4);
+                      padding: 12px 16px;
+                      z-index: 1;
+                      font-size: 20px;
+                      color: #ff9900;
+                  }
+
+                  .dropdownfeat:hover .dropdown-contentfeat {
+                      display: block;
+                  }
+
+                  .sizing {
+                    font-size: 25px;
+                  }
+
+                  .subsizing {
+                    font-size: 15px;
+                  }
+
+                  .tooltip {
+                      position: relative;
+                      display: inline-block;
+                  }
+                  .tooltiptext {
+                      visibility: hidden;
+                      width: 85px;
+                      bottom: 100%;
+                      left: 90%;
+                      margin-left: -60px;
+                      background-color: #666699;
+                      opacity: 0.7; 
+                      color: #e5ffcc;
+                      text-align: center;
+                      padding: 5px 0;
+                      border-radius: 11px;
+                      position: absolute;
+                      z-index: 1;
+                  }
+                  .tooltip:hover .tooltiptext {
+                      visibility: visible;
+                  }
+                  .tooltip:after .tooltiptext {
+                      content: close-quote;
+                      position: absolute;
+                      top: 100%;
+                      left: 50%;
+                      margin-left: -5px;
+                      border-width: 5px;
+                      border-style:double;
+                      border-color: #666699 transparent;
+                  }                   
+
+                  .card {
+                      box-shadow: 0 4px 8px 0 rgba(102, 102, 153, .4);
+                      max-width: 300px;
+                      margin: auto;
+                      text-align: center;
+                      width: 300px;
+                      height: 100px;
+                      margin-top: 20px;
+                      border-radius: 18px;
+                      border: double #000033 2px;
+                      background-color: rgba(144, 144, 187, .25);
+                  }
+                  .container {
+                      padding: 0 16px;
+                      height: 300px;
                   }
 
 		</style> 
@@ -167,20 +251,27 @@
                 
               </script>
 
-
-</head>
-            
-  
+</head>           
 
   <body>
 
-              <center><h1 id="welcome" style="text-align: center; color: #cc6600;"><a style="color: #cc6600;" href="#welcome"><img src="">TAKE/OFF<img src="imgs/26.jpg" width="80px" style="margin-left: 20px;"></a></h1></center>
+              <center><h1 id="welcome"><a style="color: #ff471a;" href="#welcome">
+              <img src="imgs/slideimgs/takeoffdark.png" width="80px" style="margin-right: 20px;">TAKE/OFF<img src="imgs/slideimgs/takeoffdark.png" width="80px" style="margin-left: 20px;"></a></h1></center>
 
-                <p id="#about" style="text-align: center; color: #cc6600;">Transform Your Traveling Experience</p>
+            <center>   <div class="dropdownfeat" style="position: relative;">   
+               <span> <p id="#about" style="text-align: center; font-size: 20px; color: #ff5c33;">Transforming Your Traveling Experience</p></span><center>
+                <div class="dropdown-contentfeat">
+                <p>Take Flight!</p>
+            </div>
+           </div>
 
-              <header style="text-align: center;"><ul style="background-color: rgba(153, 153, 255, .1);">
+              <header style="text-align: center;"><ul style="background-color: rgba(255, 112, 77, .1);">
+                
 
-                <li style="padding-top: 14px; padding-right: 5px; font-size: 18px;"><strong>Take/Off </strong></li>
+                <li style="padding-top: 14px; padding-right: 5px; font-size: 19px; color: #ff704d;">
+                <strong>Take/Off </strong></li>              
+                 </div>
+              </div>
                 <li><a href="#about">About </a></li>
                 <li><a href="#stats">Statistics </a></li>
                 <li class="dropdown">
@@ -193,115 +284,250 @@
                 <li><a href="#contact">Contact </a></li>
                   </div>
                 </li>
-                  <li style="padding-top: 8px;"><input type="text" placeholder="Verify Your Item"><input type="button" value="search"></li>
-                </ul></header>
+                  <li style="padding-top: 8px;"><input type="text" placeholder="Verify Your Airline/Item"><input type="button" value="search"></li>
+                </ul></header>                 
 
-
-                    <div id="about" class="section">
-                      <br/><br/>
+                           <div style="text-align: center;">
+                           <div id="about" class="section">
+                             <br/><br/>
                      <p style="display: inline-block;">
-                     <u> WHO IS TAKEOFF? </u>
-                      <br/>
-                     <u> WHAT DOES TAKEOFF DO?</u>
-                      <br/>
-                     <u> WHY DOES TAKEOFF DO THIS?</u>
+                        <u class="sizing"> About Us </u>
+                           <br/> <br/>
+                        <u>What Is Take/Off</u> <br/>
+                        <span style="padding-left: 18px;">A Platform That Improves Airline & Airline Passenger's Travel Experience With Data We Gather Ourselves </span>
+                            <br/> <br/>
+                        <u>Take/Off's Goal</u> <br/>
+                        <span style="padding-left: 18px;">Improve Airline's Number Of Flights, & Work With Passenger's Travel Concerns</span>
                      </p>
-                                    <br/>
+                      <br/><br/><br/><br/><br/><br/><br/>
                             <div class="dropdownimg">
-                             <img src="imgs/26.jpg" alt="Rocket" width="100" height="50">
+                             <img src="imgs/slideimgs/airportchaos.jpg" alt="Rocket" width="100" height="60">
                              <div class="dropdown-contentimg">
-                              <img src="imgs/26.jpg" alt="Rocket" width="300" height="200">
-                              <div class="desc">Let's Take Off</div>
+                              <img src="imgs/slideimgs/airportchaos.jpg" alt="Rocket" width="500" height="370">
+                              <div class="desc">Airport Lost In Chaos</div>
                            </div>
                          </div>
-
-                        <br/><br/><br/><br/>
-
-                           <div style="text-align: center;"> 
                               <a href="#stats">
-                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: black;"></i>
-                              </a> 
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a>                               
+                          </div>
+                    </div>
 
-                              <a href="#welcome">
-                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: black;"></i>
+                           <div style="text-align: center;">
+                           <div id="stats" class="section">                            
+                               <br/><br/>
+                     <p style="display: inline-block;">
+                            <u class="sizing">NUMBER$ + STAT$</u>
+                                <br/> <br/>
+                        <u>Arcillary Revenue</u> <br/>
+                        <span style="padding-left: 18px;">In 2016 Airlines Generated $67.4 Billion In Revenue. Arcillaries are separate amenities a consumer can order while travelling. The list continues to grow and the following lists typical activities: 1) onboard sales of food and beverages, 2) checking of baggage and excess baggage, 3) assigned seats or better seats such as aisle seats, 4) call center support for reservations, 5) fees charged for purchases made with credit cards, and 6) early boarding benefits. </span>
+                            <br/> <br/>
+                        <u>Commercial Flights</u> <br/>
+                        <span style="padding-left: 18px;">There are roughly 23,911 Flights Per Day In The U.S. With roughly 8,727,691 Flights Per Year (2015) </span>
+                           <br/> <br/>
+                        <u>Passengers</u> <br/>
+                        <span style="padding-left: 18px;">There Were A Total Of 930,697,239 Travellers in 2016</span>
+                            <br/> <br/>
+                        <u>Take/Off's Goal</u> <br/>
+                        <span style="padding-left: 18px;">Delays Caused By Ailines Topped Delays Caused By The National Aviation System </span>
+                      <br/> <br/><br/><br/><br/>
+                     </p>
+                                    <br/><br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/arcillaryrevenue.png" alt="Flights Per Day In The U.S." width="100" height="50">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/arcillaryrevenue.png" alt="Flights Per Day In The U.S." width="500" height="300">
+                              <div class="desc">Worldwide Arcillary Revenue</div>
+                           </div>
+                         </div>
+                              <br/><br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/dailyflights.jpg" alt="Flights Per Day In The U.S." width="100" height="50">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/dailyflights.jpg" alt="Flights Per Day In The U.S." width="450" height="250">
+                              <div class="desc">Flights Per Day In The U.S. (8,727,691 Flights In 2015)</div>
+                           </div>
+                         </div>
+                              <br/><br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/AnnualAirTraffic.jpg" alt="Flights Per Day In The U.S." width="100" height="50">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/AnnualAirTraffic.jpg" alt="Flights Per Day In The U.S." width="490" height="300">
+                              <div class="desc">Annual Air Traffic</div>
+                           </div>
+                         </div>
+                                       <br/><br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/delayreason.png" alt="Flights Per Day In The U.S." width="100" height="50">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/delayreason.png" alt="Flights Per Day In The U.S." width="600" height="500">
+                              <div class="desc">Delays Caused By Airlines Take The Lead Over Delays Caused By National Aviation System</div>
+                           </div>
+                         </div>
+                         <br/>
+                              <a href="#feature1">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                              <a href="#about">
+                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
                               </a> 
                           </div>
-
+                    </div>
+                                
+                   <div style="text-align: center;">
+                           <div id="feature1" class="section">                            
+                               <br/><br/>
+                     <p style="display: inline-block;">
+                             <u class="sizing">BAGGAGE FEE MANAGER</u>
+                                <br/><br/><br/><br/>
+                          <u>Manage Your Baggage Fees</u> <br/>
+                        <span style="padding-left: 18px;">View And Compare Every Airline's Baggage Fess Expenses, Days And Weeks Before Your Flight. By Destination, Bag Weight, Bag Size, & Date Of Flight </span>
+                            <br/> <br/>
+                      <br/> <br/><br/><br/><br/>
+                     </p>                                   
+                                     <br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/baggagemess.jpg" alt="Rocket" width="80" height="60">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/baggagemess.jpg" alt="Rocket" width="550" height="350">
+                              <div class="desc">Crowded Airport Check-In</div>
+                           </div>
+                         </div>
+                              <a href="#feature2">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                              <a href="#stats">
+                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                          </div>
                     </div>
 
-                        <div id="stats" class="section">
-                      <u>NUMBER$ & STAT$</u>
-                        <br/><br/><br/><br/>
-
-                            <a href="#feature1"> <img src="///??????////"> </a>
-                            <a href="#about"> <img src="///^^^^^^^////"> </a>
+                           <div style="text-align: center;">
+                           <div id="feature2" class="section">                            
+                               <br/><br/>
+                     <p style="display: inline-block;">
+                             <u class="sizing">BAGGAGE WEIGHT</u>
+                              <br/><br/><br/><br/>
+                          <u>Manage Your Weight Fees</u> <br/>
+                        <span style="padding-left: 18px;">View And Compare Every Airline's Baggage Weight Limit & The Cost For Overwight Bags. By Destination, Bag Weight & Bag Size </span>
+                            <br/> <br/>
+                     </p>
+                                   <br/><br/><br/><br/><br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/overweightbags.jpg" alt="Rocket" width="100" height="60">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/overweightbags.jpg" alt="Rocket" width="450" height="350">
+                              <div class="desc">Baggage Overweight Issues</div>
+                           </div>
+                         </div>
+                              <a href="#feature3">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                              <a href="#feature1">
+                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                          </div>
+                    </div>                          
+                              
+                          <div style="text-align: center;">
+                           <div id="feature3" class="section">                            
+                               <br/><br/>
+                     <p style="display: inline-block;">
+                     <u class="sizing"> WHAT'S ALLOWED?</u>
+                     </p>
+                               <center><input type="idea" placeholder="Enter Item"></center>
+                              <center><input type="button" value="Submit Item"></center>
+                                                 <br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/tsapackingtips.jpg" alt="Rocket" width="50" height="100">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/tsapackingtips.jpg" alt="Rocket" width="200" height="600">
+                              <div class="desc">TSA Packing Tips</div>
+                           </div>
+                         </div>
+                                     <br/><br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/restricteditems.png" alt="Rocket" width="70" height="100">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/restricteditems.png" alt="Rocket" width="300" height="400">
+                              <div class="desc">Restricted Items On Planes</div>
+                           </div>
+                         </div>
+                         <br/>
+                              <a href="#future">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                              <a href="#feature2">
+                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                          </div>
                     </div>
-                    
-                    <div id="feature1" class="section">
-                      <u>LUGGAGE FEES</u>
-                        <br/><br/><br/>
-
-                            <a href="#feature2"> <img src="///??????////"> </a>
-                            <a href="#stats"> <img src="///^^^^^^^////"> </a>
-                    </div>
-                    
-                    <div id="feature2" class="section">
-                     <u> LUGGAGE WEIGHTS</u>
-                        <br/><br/>
-                            <a href="#feature3"> <img src="///??????////"> </a>
-                            <a href="#feature1"> <img src="///^^^^^^^////"> </a>
-                    </div>
-
-                        <div id="feature3" class="section">
-                     <u> WHAT'S ALLOWED?</u>
-                              <br/>
-                              <input type="idea" placeholder="Enter Item">
-                              <input type="button" value="Submit Item">
-                        <br/><br/>
-
-                            <a href="#future"> <img src="///??????////"> </a>
-                            <a href="#feature2"> <img src="///^^^^^^^////"> </a>                          
-                    </div>
-
-                        <div id="future" class="section">
-                      <u> NEAR FUTURE FEATURES</u>
+                                            
+                   <div style="text-align: center;">
+                   <div id="future" class="section">                           
+                               <br/><br/>
+                     <p style="display: inline-block;">
+                             <u class="sizing">IN THE WORKS</u>
+                     </p>
                         <br/>
                         <br/>
-                        News Destination. <br/>
-                        <span style="padding-left: 18px;">Look At Current News And Events Happening At Your Destination Location.</span>
+                        <u>News Destination</u> <br/>
+                        <span style="padding-left: 18px;">Look At Current News And Events Happening At Your Destination Location</span>
+                            <br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/worldnews.jpeg" alt="Rocket" width="90" height="70">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/worldnews.jpeg" alt="Rocket" width="500" height="300">
+                              <div class="desc">Destination News</div>
+                           </div>
+                         </div>
                         <br/>
-                        <br/>
-                        Take/Off Attendance <br/>
+                        <u class="subsizing"> Take/Off Attendance </u><br/>
                         <span style="padding-left: 18px;"> Helps Organize Pilot and Flight Attendance's Latenesses and Schedules.</span>
-                        <br/>
-
-                            <a href="#contact"> <img src="///??????////"> </a>
-                            <a href="#feature3"> <img src="///^^^^^^^////"> </a>
+                             <br/>
+                            <div class="dropdownimg">
+                             <img src="imgs/slideimgs/pilotslate.jpg" alt="Rocket" width="100" height="80">
+                             <div class="dropdown-contentimg">
+                              <img src="imgs/slideimgs/pilotslate.jpg" alt="Rocket" width="550" height="400">
+                              <div class="desc">Destination News</div>
+                           </div>
+                         </div>
+                         <br/>
+                              <a href="#contact">
+                                <i class="fa fa-arrow-circle-down" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                              <a href="#feature3">
+                                <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i>
+                              </a> 
+                          </div>
                     </div>
 
-                      <div id="contact" class="section">
-                          <u>Contact</u>
-                      <a href="mailto:GomezLuisAP@Gmail.com">GomezLuisAP@Gmail.com</a>
-                      <br/>
-                      <a href=""></a>
-                      @LinkedIn
-                      <br/>
-                      <a href=""></a>
-                      @GitHub
-                        <br/><br/><br/><br/>
+              <br/><br/><br/><br/><br/><br/>
 
-                            <a href="#welcome"> <img src="///^^^^^^^////"> </a>
-                    </div>
+         <div id="contact" class="card" class="container">
+                               <br/><br/>
+         <div style="font-size: 20px; display: inline-block;"><a href="mailto:GommezLuisAP@Gmail.com" target="_blank" style="color:#0000b3;">Email</a>
+              <span class="tooltiptext">Email</span>
+         <div style="display: inline-block;"><a href="https://www.linkedin.com/in/gomezluisap/" target="_blank" style="color:#0000b3;">LinkedIn</a>
+              <span class="tooltiptext">Linkedin</span>
+         <div style="display: inline-block;"><a href="https://github.com/solarphaces/" target="_blank" style="color:#0000b3;">GitHub</a>
+              <span class="tooltiptext">Github</span>
 
-                    </div>
+          </div>
+        </div>
+      </div>  
+                              <br/>
+                        <div> <a href="#welcome">
+                   <i class="fa fa-arrow-circle-up" aria-hidden="true" style="font-size: 34px; color: #ff9980;"></i></a> </div>
 
-                          
-                      
-                        <br/>
-                      © 2017 TAKE/OFF 
-                      <button type="button" onclick="alert('FAILURE IS SUCCESS')">Click Me</button>
-                            
-                    </div>
-
+                        <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                        <div class="dropdownfeat">
+                          <span style="color: #ff5c33;">© 2017 TAKE/OFF </span>
+                          <div class="dropdown-contentfeat">
+                            <p>We'll Take Care Of It!</p>
+                          </div>
+                        </div>
+                      <button style="color: #800040;s" type="button" onclick="alert('FAILURE IS SUCCESS')">Click Me</button>
+                   </div>
   </body>
 </html>
